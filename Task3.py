@@ -19,7 +19,7 @@ def leap_year(inp_year):
         if inp_year in leap_ylist:
             print('Високосный')
         else:
-            print('Не Високосный')
+            print('Обычный')
 
 
-leap_year(1904)
+leap_year(1982)
