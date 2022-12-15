@@ -9,4 +9,17 @@
 
 '''
 
+
 def leap_year(inp_year):
+    if not 1900 <= inp_year <= 3000:
+        print('Вне диапазона допустимых годов')
+    else:
+        leap_ylist = [x for x in range(1900, 3000) if x % 4 == 0 and (x % 400 == 0 or not x % 100 == 0)]
+
+        if inp_year in leap_ylist:
+            print('Високосный')
+        else:
+            print('Не Високосный')
+
+
+leap_year(1904)
